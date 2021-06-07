@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light">
+  <a routerLink="" class="navbar-brand mb-0 h1">{{title}}</a>
+  <div class="d-flex">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]='serviceFilms.searchInput'>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="serviceFilms.searchFilm()" routerLink="search">Search</button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
